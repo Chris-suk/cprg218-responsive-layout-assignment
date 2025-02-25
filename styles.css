@@ -1,0 +1,125 @@
+   
+body{
+    font-family: sans-serif;
+    margin: 0%;
+}
+
+/* large greater then 1000px 
+3 column layout 
+side bar on the right!!*/ 
+@media screen and (min-width: 1000px) {
+    .header-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #120323;
+        color: #97bf04;
+        padding: 2%;
+    }
+    header h1 {
+        margin-left: 2%;
+    }
+    figure {
+        display: flex;
+        padding: 3%;
+    }
+    figure img {
+        max-width: 300px;
+        border: #d9043d solid 5px;
+        margin-right: 20px;
+        object-fit: cover;
+        display: flex;
+    }
+    aside {
+        background-color: #97bf04; 
+        float: right;
+        width: 80%;
+        padding: 20px;
+        margin-bottom: 2rem;
+
+    } 
+   #container {
+    display: flex;
+    margin-top: 2rem; 
+   }
+    footer {
+        text-align: center;
+        color: white;
+        padding: 3%;
+        background-color: #d9043d;
+    }
+}
+
+/* medium less than 1000px 
+logo and company name on the same line 
+image no wider than 300px 
+side bar appear on the bottom take 100% of horizontal width*/
+@media screen and (max-width: 1000px) {
+    .header-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #120323;
+        color: #97bf04;
+        padding: 2%;
+    }
+    header h1 {
+        margin-left: 2%;
+    }
+    figure {
+        display: flex;
+        padding: 3%;
+    }
+    figure img {
+        max-width: 300px;
+        border: #d9043d solid 5px;
+        margin-right: 20px;
+        object-fit: cover;
+    }
+    aside {
+        background-color: #97bf04;
+        padding: 3%;
+        margin-bottom: 3%;
+    }
+    footer {
+        text-align: center;
+        color: white;
+        padding: 3%;
+        background-color: #d9043d;
+    }
+}
+
+/*smallest less than 768px
+The logo and company name should be on separate lines
+All content should be in one column
+The puffin image should be centred horizontally 
+and take up 100% of the width of the page*/
+@media screen and (max-width: 768px) {
+    .header-container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: #120323;
+        color: #97bf04;
+        padding: 3%;
+    }
+    figure {
+        display: grid;
+        place-items: center;
+    }
+    figure img {
+        border: #d9043d solid 5px;
+        max-width: 100%;
+    }
+    aside {
+        background-color: #97bf04;
+        padding: 3%;
+        margin-bottom: 2%;
+    }
+    footer {
+        text-align: center;
+        color: white;
+        padding: 4%;
+        background-color: #d9043d;
+    }
+} 
